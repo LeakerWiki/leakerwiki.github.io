@@ -1,0 +1,160 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Стиль для body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white; /* Белый фон для страницы */
+  width: 100%; /* Ширина страницы на весь экран */
+  min-width: 100%; /* Минимальная ширина 100% */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Отключаем горизонтальный скролл */
+}
+
+/* Контейнер, который будет содержать основной контент */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ограничиваем максимальную ширину контейнера */
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  padding: 20px; /* Отступы внутри контейнера */
+}
+
+/* Стиль для логотипа (если нужно добавить логотип сверху) */
+header img {
+  width: 100px; /* Размер логотипа */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Основной блок на главной странице */
+.intro {
+  background-color: #f9f9f9; /* Светлый фон для блока */
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Тексты внутри блока intro */
+.intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  background-color: #f9f9f9; /* Светлый фон для блока */
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Тексты внутри блока intro */
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.privacy-policy {
+  background-color: #f9f9f9; /* Светлый фон для блока */
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Тексты внутри блока intro */
+.privacy-policy p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.terms {
+  background-color: #f9f9f9; /* Светлый фон для блока */
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+/* Тексты внутри блока intro */
+.terms p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Навигационное меню */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Выравниваем меню по центру */
+  background-color: #333; /* Темный фон для меню */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+nav ul li {
+  margin: 0 15px; /* Отступы между пунктами меню */
+}
+
+nav ul li a {
+  color: white; /* Белый текст */
+  text-decoration: none; /* Убираем подчеркивание */
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Изменение фона при наведении */
+  border-radius: 4px;
+}
+
+/* Footer (подвал страницы) */
+footer {
+  background-color: #333; /* Темный фон для подвала */
+  color: white; /* Белый текст */
+  padding: 10px;
+  text-align: center; /* Выравнивание текста по центру */
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer p {
+  font-size: 14px; /* Размер шрифта */
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media screen and (max-width: 768px) {
+  /* Мобильное меню: вертикальный вид */
+  nav ul {
+    flex-direction: column; /* Размещаем элементы вертикально */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Убираем горизонтальные отступы */
+  }
+
+  .intro {
+    padding: 20px; /* Меньше отступов на мобильных устройствах */
+    max-width: 90%; /* Ограничиваем ширину */
+  }
+
+  footer p {
+    font-size: 12px; /* Меньше размер шрифта в подвале */
+  }
+}
